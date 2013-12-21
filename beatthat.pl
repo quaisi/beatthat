@@ -10,8 +10,8 @@ my $total;
 
 for (1..10){
 
-    my $rand1 = int(rand(11));
-    my $rand2 = int(rand(11));
+    my $rand1 = int(rand(10) + 1);
+    my $rand2 = int(rand(10) + 1);
     my $answer = $rand1 * $rand2;
 
     print "What is $rand1 x $rand2: ";
@@ -22,9 +22,3 @@ for (1..10){
 }
 
 say "You got $total out of 10 correct";
-        
-
-
-
-
-
