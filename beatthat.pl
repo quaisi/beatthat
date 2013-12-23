@@ -4,13 +4,13 @@ use warnings;
 use diagnostics;
 use 5.010;
 
-say "******************************BEAT THAT******************************";
 
 my $total = 0;
 my $again = 1;
 my $valid_input = 0;
 
 while ($again == 1){
+    say "****************************** BEAT THAT ******************************";
     for (1..10){
 
         my $rand1 = int(rand(10) + 1);
