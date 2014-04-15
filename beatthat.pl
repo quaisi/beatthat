@@ -35,7 +35,7 @@ while ( $again == 1 ) {
                     $total++;
                 }
                 else {
-                    push @incorrect_answers, "$rand1 times $rand2 = " . ($rand1 * $rand2);
+                    push @incorrect_answers, "$rand1 x $rand2 = " . ($rand1 * $rand2);
                 }
 
             }
@@ -44,6 +44,8 @@ while ( $again == 1 ) {
     }
     say "You got $total out of 10 correct";
     if (@incorrect_answers > 0 ) {
+        say "\nHave a look at the ones you got wrong";
+
         foreach my $wrong_answer (@incorrect_answers){
             print $wrong_answer . "\n";
         }
@@ -54,5 +56,5 @@ while ( $again == 1 ) {
     say "Type yes to go again: ";
     chomp( my $input = <STDIN> );
     $total = 0;
-    $again = 0 unless $input =~ /yes/i;
+    $again = 0 unless $input =~ /^yes$/i;
 }
