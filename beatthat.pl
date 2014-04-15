@@ -33,5 +33,6 @@ while ($again == 1){
     say "You got $total out of 10 correct";
     say "Type yes to go again: ";
     chomp (my $input = <STDIN>);
+    $total = 0;
     $again = 0 unless $input =~ /yes/i;
 }
