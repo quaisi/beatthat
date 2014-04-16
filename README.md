@@ -10,10 +10,10 @@ It asks 10 multiplication questions from the 1 to 10 times tables.  Tells you ho
 Installation
 ============
 
-''''
+````
 git clone https://github.com/quaisi/beatthat.git
 
 cd beatthat
 
 ./beathat.pl
-''''
+````
